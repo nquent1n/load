@@ -26,8 +26,8 @@ def get_slice_mask_path(base_dir, patient_id_list=None, shuffle=True):
     mask_path_list = []
 
     for patient_id in patient_id_list:
-        patient_dicom_path = "../3Dircadb1/3Dircadb1." + str(patient_id) + "/PATIENT_DICOM"
-        mask_dicom_path = "../3Dircadb1/3Dircadb1." + str(patient_id) + "/MASKS_DICOM/portalvein"
+        patient_dicom_path = "/kaggle/input/3dircadb1/3Dircadb1/3Dircadb1." + str(patient_id) + "/PATIENT_DICOM"
+        mask_dicom_path = "/kaggle/input/3dircadb1/3Dircadb1/3Dircadb1." + str(patient_id) + "/MASKS_DICOM/portalvein"
         slice_path = os.path.join(base_dir, patient_dicom_path)
         mask_path = os.path.join(base_dir, mask_dicom_path)
 
